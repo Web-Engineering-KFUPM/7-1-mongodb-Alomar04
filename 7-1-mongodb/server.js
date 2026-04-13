@@ -185,9 +185,10 @@
  */
 
 // import mongoose
+import mongoose from "mongoose";
 
 // establish connection
-
+mongoose.connect("mongodb+srv://s202263820_db_user:NTlOGKn09xQZcjrZ@cluster0.guofken.mongodb.net/labDB");
 
 // define schema
 
