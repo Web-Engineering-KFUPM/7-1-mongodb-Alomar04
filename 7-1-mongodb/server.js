@@ -191,7 +191,12 @@ import mongoose from "mongoose";
 mongoose.connect("mongodb+srv://s202263820_db_user:NTlOGKn09xQZcjrZ@cluster0.guofken.mongodb.net/labDB");
 
 // define schema
-
+const studentSchema = new mongoose.Schema({
+  name: String,
+  age: Number,
+  major: String
+});
+const Student = mongoose.model("Student", studentSchema);
 
 // create document
 
